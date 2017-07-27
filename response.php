@@ -5,7 +5,7 @@ $test_env = true;
 if ($test_env) {
     $wsdl = "https://testecomm.sella.it/gestpay/gestpayws/WSCryptDecrypt.asmx?WSDL"; //TESTCODES
 } else {
-    $wsdl = "httpgit s://ecomms2s.sella.it/gestpay/gestpayws/WSCryptDecrypt.asmx?WSDL"; //PRODUCTION
+    $wsdl = "https://ecomms2s.sella.it/gestpay/gestpayws/WSCryptDecrypt.asmx?WSDL"; //PRODUCTION
 }
 
 $client = new SoapClient($wsdl);
